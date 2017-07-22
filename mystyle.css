@@ -34,10 +34,14 @@ div.float_right{
 
 p {
     text-indent:40px;
+    text-align:justify;
     font-weight:lighter;
 }
 
-
+img.float_right{
+    float:right;
+    margin:0 0 10px 10px;
+}
 ul{
     list-style-type:none;
     margin:0;padding:0;width:25%;
