@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="jquery-3.2.1.min.js"></script>
+<script>
+$(document).ready(function(){
+
+
+    $("p").on({
+        mouseenter:function(){
+            $(this).css("background-color", "lightgray");
+        },
+        mouseleave:function(){
+            $(this).css("background-color", "lightblue");
+        }
+    });
+
+
+});
+</script>
+
+</head>
+
+<body>
+<button onclick="document.getElementById('demo').innerHTML='foo'">The time is?</button>
+
+<p id="demo">bar</p>
+
+    
+<p> This will disappear. </p>    
+
+
+    
+</body>
+</html>

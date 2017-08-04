@@ -4,6 +4,9 @@ body{
 }
 
 
+body {margin:0;}
+
+
 
 div.grad1 {
     background: gray; /* For browsers that do not support gradients */
@@ -27,7 +30,6 @@ h2{
 }
 
 div.float_right{
-    margin-left:20%;
     padding:1px 16px;
     height:1000px;
 }
@@ -71,26 +73,34 @@ img.float_right{
 }
 ul{
     list-style-type:none;
-    margin:0;padding:0;width:20%;
+    margin:0;
+    padding:0;
+    overflow:hidden;
     background-color:#f1f1f1;
     position:fixed;
-    height:100%;
-    overflow:auto;
+    top:0;
+    width:100%;   
+}
+
+li{
+    border-right:solid 1px #333;
+    float:left;
 }
 
 li a{
     display:block;
+    text-align:center;
     color:#000;
-    padding: 8px 16px;
+    padding: 14px 16px;
     text-decoration:none;
-}
-
-li a.active{
-    background-color: #4caf50;
-    color:white;
 }
 
 li a:hover:not(.active){
     background-color:#a0a0a0;
     color:white;
 }
+li a.active{
+    background-color: #4caf50;
+    color:white;
+}
+
