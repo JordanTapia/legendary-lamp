@@ -25,22 +25,17 @@ h1 {
 }
 h2{ 
     clear:both;
-    padding:15px;
-    padding-top:50px;
-    margin:55px;
     font-size:1.5em;
     border-bottom:solid 1px; 
     text-align:center;
+    padding-top:50px;
+    padding-right:20px;
+    padding-left:20px;
 }
 
 div.float_right{
     padding:1px 16px;
     height:1000px;
-}
-div.end{
-    border:1px solid white;
-    height:500px;
-
 }
 
 /* Gallery Settings*/
@@ -70,7 +65,8 @@ div.description{
 
 
 p {
-    text-indent:40px;
+    padding-right:20px;
+    padding-left:20px;
     text-align:justify;
     font-weight:lighter;
 }
@@ -114,6 +110,5 @@ li a.active{
 }
 
 div.end{
-    background-color:white;
-    padding:50px;
+    height:900px;
 }
