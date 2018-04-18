@@ -163,24 +163,26 @@
     <!--End Resume begin Projects-->
 
     <h2 id="projects">Projects</h2>
-    <p> I've gained practical experience working with analog design. Projects I've worked on have me in the lab for hours, and I enjoy getting electronics to work and discovering some new application along the way.  
+    <p> I've gained practical experience working with analog design. Projects I've worked on have me in the lab for hours, and I enjoy getting electronics to work and discovering some unexpected along the way.  
 
     <h4> AM Radio Receiver </h4>
 
-    <p> This Winter 2018 I designed an built an AM Radio Receiver on a PCB tuned for 1460 kHz. After researching receiver design and necessary components, I designed using industry standard tools Orcad Schematic Capture and PCB Layout. </p>
-    <p> This has so far been an excercise in trouble shooting, but the circuit is workable. Currently the mixer works beautifully and is precisely tuned. The entire mixer/demodulation stage offers a solid 40dBm of gain, which is perfect for RF. However, an oscillatory gain IF gain stage was identified using an oscilloscope. One solution that has yet to be tested involves RF chokes on the gate bias network. This will be tested as soon as my campus lab opens up, but I'm confident it will fix the issue. </p>
-    <p> This project has stoked my passion for analog design and given me practical experience in using RF tools.</p>  
+    <p> This Winter 2018 I designed an built an AM Radio Receiver on a PCB tuned for 1460 kHz. After researching typical receiver architectures and necessary components, I designed using industry standard tools Orcad Schematic Capture and PCB Layout. </p>
+    <p> This has so far been an excercise in trouble shooting, but the circuit is workable. Currently the mixer works beautifully and is precisely tuned. The entire mixer/demodulation stage offers a solid 40dBm of gain, which is perfect for RF. However, an oscillatory IF gain stage was identified using an oscilloscope. One solution that has yet to be tested involves RF chokes on the oscillatory gain stage.  </p>
+    <p> The circuit still isn't working overall, but this project has stoked my passion for analog design and given me practical experience using the tools for RF design.</p>  
 
     <h4> Feedback System for Motion Control </h4>
 
-    <p> My senior design project has put me onto the practical side of control theory. I was excited to join this team, especially right after finishing a Feedback Control course at UCSC.  I am part of the five member senior design team designing a motion control project that models our corporate sponsor's
-OLED printing machinery. 
+    <p> My senior design project relies on control theory. I was excited to join this team, especially after finishing the Feedback Control course at UCSC. My design team is using control theory to solve the problem of nonlinear motion associated with pneumatic devices. </p>
+    <p> Our system models the OLED printing machinery used by our corporate sponsors. As a pneumatically controlled printerhead deposits material into a well in the OLED printing process, it must maintain precise, smooth motion. However, a pneumatic air cylinder is highly nonlinear: compressed gas experiences change in temperature and pressure, and the internal mechanics of the device cause friction that is difficult to model mathematically. All of this contributes to unpredictable, nonlinear motion. We are using applied control theory to solve this problem.</p>
+
     <p> The design uses an Arduino Uno to implement negative feedback control. It senses position of a weighted air cylinder connected to a linear potentionmeter. The voltage of the potentiometer corresponds to position, and the Arduino adjusts its output voltage using PID control until the setpoint is reached.</p>
     <p> Our current method involves PID tuning to achieve optimum settling time. However, the machinery used in industry are all different, even within a single company: the cylinder may have different frictional forces acting on it, and may hold different weights. The current PID approach takes time to tune each control parameter for each individual system. This final quarter, we are seeking to eliminate this tuning time. My main task will be to implement a least squares estimation technique into an algorithm that both improves the settling time and can apply generally to other systems with different machinery, weight, etc. To that end, faculty at UCSC are assisting us in algorithm design and research. </p>    
     <h4> 64 Bit CPU in Verilog </h4>
     <p> Last spring a project from Advanced Logic Design implemented the RISC-V ISA in Verilog.</p>
     <p> Before this project, I had never taken computer architecture, but I learned enough of it throughout this project experience to build a CPU. I designed all of the component modules for instruction fetch, decode, execute, and memory/writeback. The professor was kind enough to lend us his C++ testbenches, but they only told us if the program crashed or not, and I found it more useful to debug by viewing the waveforms.</p>
     <p> This project had unexpected data hazards and involved significant time for debugging. The main problems were with the jump and link instruction. The branch instructions and arithmetic instructions were easily handled by implementing data forwarding. However I needed more time to finish debugging for JAL, which for some reason did not have the same cycle time as other instructions.</p>
+    <p> Overall this was a fun project. Nearly all of the RISC-V instructions ran smoothly, but the hard part was integrating it all to run a simple C program. I got to see that Verilog is amazing. It  beats out CMPE 100 where we used outdated Xilinx software that required wiring every single connection!</p>
  
  
     <div class="end"></div> 
